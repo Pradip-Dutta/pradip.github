@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour&travel</title>
+
+    <!-- ----------bootstrap link----------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- aos animation link -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- aos javascript libery link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- fontawsome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ----------------------header section------------------ -->
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" id="nav">
+              <a class="navbar-brand" href="#">Company brand</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> --><svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="currentColor" class="bi bi-list-nested" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z"/>
+</svg>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link href="#">Prject's</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- ------------image slider------------------- -->
+
+
+          <div class="image-slide">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/image/img4.jpg" class="d-block w-100 img-fluid opacity-76" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/image/img5.jpg" class="d-block w-100 img-fluid opacity-76" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/image/img3.jpg" class="d-block w-100 img-fluid opacity-76" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+    </header>
+
+
+    <!-- -----------about section-------------- -->
+
+    <section class="about" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
+        <div class="about-text">
+          <h2>About Us</h2>
+        </div>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-6">
+                    <img src="/image/contect.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <div class="text text-start p-4">
+                        <h2>ABOUT US</h2>
+                    <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam architecto minus voluptatem possimus iste minima, corporis esse? Cupiditate,
+                         sunt eaque, eum, eius saepe quos expedita aut accusantium quod totam hic soluta labore. Architecto, molestiae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Quo numquam accusantium laborum. Quisquam, tempora. Eius aliquid ad distinctio possimus quaerat.</p>
+                          <button class="btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---about section end------ -->
+
+
+    <!-- --------------- services---------------------- -->
+
+   <section id="why-us" data-aos="fade-up" data-aos-anchor-placement="center-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="card">
+            <img src="/image/service1.jpg" class="card-img-top" alt="">
+            <div class="card-icon">
+              <i class=" "><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="white" class="bi bi-balloon-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.244-.487ZM4.352 3.356a4.004 4.004 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5c0 .276-.226.496-.498.542-.95.162-1.749.78-2.173 1.617a.595.595 0 0 1-.52.341c-.346 0-.599-.329-.457-.644Z"/>
+              </svg></i>
+            </div>
+            <div class="card-body">
+              <h5 class="crad-title text-center">
+                <a >Our mission</a>
+              </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Odit minima quibusdam consequuntur quas possimus molestias nisi necessitatibus. Aliquam, minus sequi!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="card">
+            <img src="/image/service2.jpg" class="card-img-top" alt="">
+            <div class="card-icon">
+              <i class=" bx bx-book-reader"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="white" class="bi bi-calendar-range" viewBox="0 0 16 16">
+                <path d="M9 7a1 1 0 0 1 1-1h5v2h-5a1 1 0 0 1-1-1zM1 9h4a1 1 0 0 1 0 2H1V9z"/>
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg></i>
+            </div>
+            <div class="card-body">
+              <h5 class="crad-title text-center">
+                <a >Our Vision</a>
+              </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Odit minima quibusdam consequuntur quas possimus molestias nisi necessitatibus. Aliquam, minus sequi!</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="card">
+            <img src="/image/service3.jpg" class="card-img-top" alt="">
+            <div class="card-icon">
+              <i class=" bx bx-book-reader"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="white" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+              </svg></i>
+            </div>
+            <div class="card-body">
+              <h5 class="crad-title text-center">
+                <a >Our Plan</a>
+              </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Odit minima quibusdam consequuntur quas possimus molestias nisi necessitatibus. Aliquam, minus sequi!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+
+   <!-- services card end -->
+
+
+   <!-- _____________project gallrey_________________ -->
+
+      <div class="gallry py-2" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <div class="gallry-title text-center text-bold">
+          <h2 class="p-4">Project's</h2>
+        </div>
+
+        <div class="container py-5">
+          <!-- Gallery -->
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="https://images.unsplash.com/photo-1668539095744-0480bd98cfed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="https://images.unsplash.com/photo-1668584044380-520997086ee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="https://images.unsplash.com/photo-1667663482899-8eadacba38de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />
+
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="https://images.unsplash.com/photo-1534430224470-f52e596ced9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+</div>
+<!-- Gallery -->
+        </div>
+      </div>
+   <!--gallrey end -->
+
+
+   <section id="contact" class="contact section-bg" data-aos="fade-up"
+   data-aos-anchor-placement="bottom-bottom">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-3 col-md-5 mb-5 mb-md-0">
+          <div class="info">
+            <div class="address">
+              <i class="bx bx-map"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-add" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h4a.5.5 0 1 0 0-1h-4a.5.5 0 0 1-.5-.5V7.207l5-5 6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 1 0 1 0v-1h1a.5.5 0 1 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+              </svg></i>
+              <p>A108 Adam Street<br>New York, NY 535022</p>
+            </div>
+
+            <div class="email">
+              <i class="bx bx-envelope"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+              </svg></i>
+              <p>info@example.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bx bx-phone-call"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
+              </svg></i>
+              <p>+1 5589 55488 55s</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="facebook"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-5 col-md-7">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+            </div>
+            <div class="form-group mt-3">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ----------footer--------- -->
+
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #0a4275;">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: CTA -->
+        <section class="footer" id="signup">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Register for free</span>
+            <button type="button" class="btn btn-outline-light btn-rounded" href="">
+              Sign up!
+            </button>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="">ture&travel.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

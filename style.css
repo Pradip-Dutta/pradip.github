@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav bar */
+.site-header{
+    width: 100%;
+    height: 100vh;
+    
+}
+#nav{
+    background-color: #ffffff8b;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.122) 0px 10px 20px, rgba(0, 0, 0, 0.166) 0px 6px 6px;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+   background-position: 0;
+  }
+  
+  .nav-link:hover::before{
+    width: 100%;
+  }
+  
+/* image slider */
+.image-slide{
+    width: 100%;
+    height: 85vh;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 94vh;
+    background:linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        );
+}
+
+h5{
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 12.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-weight: 600;
+    font-size: larger;
+    color: rgb(251, 248, 248);
+    text-align: center;
+}
+
+
+/* about section */
+
+.about{
+    margin: 10px;
+}
+.about-text{
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;   
+}
+
+.about-text h2::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    bottom: 0;
+    left:48%;
+    background: #fd680e;
+}
+
+.btn{
+    background-color: #fd680e;
+    color: #fff;
+}
+
+
+/* services box */
+
+#why-us{
+    padding-bottom: 30px;
+}
+
+section{
+    padding: 80px 0;
+}
+
+#why-us .card-icon i {
+    font-size: 32px;
+    color: #fff;
+    width: 64px;
+    height: 64px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #fd680e;
+    border-radius: 50%;
+    text-align: center;
+    border: 4px solid #fff;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.twitter,.facebook,.linkedin,.instagram{
+    padding: 0 10px;
+    font-size: 20px;
+    color: #fd680e;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+
+#why-us .card-title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+}
+
+.card-icon{
+    margin-top: -32px;
+    text-align: center;
+}
+
+/* services card end */
+
+
+.section-title{
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #fd680e;
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+
+.gallry-title{
+    position: relative;
+}
+
+.gallry-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #fd680e;
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #fd680e;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#contact{
+    padding: 80px 0;
+}
+
+svg{
+    color: #fd680e;
+}
+
+.footer{
+padding: 15px;
+}
+/* ----------media querys----------- */
+
+
+/*  X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .col-lg-3{
+        flex: 0 0 auto;
+    width: 25%;
+    }
+ }
+ /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+ /* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {  }
+
+/* /* XX-Large devices (larger desktops) No media query since the xxl breakpoint has no upper bound on its width */ 
