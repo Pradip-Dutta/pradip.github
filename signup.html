@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>signup</title>
+    <style>
+  .error {
+    color: red;
+  }
+</style>
 </head>
 <body>
-    <div class="modal-dialog modal-dialog-centered">...</div>
+    <div class="modal-dialog modal-dialog-centered">
+        <form id="signin-form">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <span id="username-error" class="error"></span>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <span id="email-error" class="error"></span>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <span id="password-error" class="error"></span>
+  
+  <input type="button" value="Submit" onclick="submitForm()">
+</form>
+
 </body>
-</html>
+
+<script>
+  function submitForm() {
+    let isValid = true;
+    
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    
+    // Validate username
+    if (!username) {
+      document.getElementById("username-error").innerHTML = "Username is required";
+      isValid = false;
+    } else {
+      document.getElementById("username-error").innerHTML = "";
+    }
+    
+    // Validate email
+    if (!email) {
+      document.getElementById("email-error").innerHTML = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      document.getElementById("email-error").innerHTML = "Email is invalid";
+      isValid = false;
+    } else {
+      document.getElementById("email-error").innerHTML = "";
+    }
+    
+    // Validate password
+    if (!password) {
+      document.getElementById("password-error").innerHTML = "Password is required";
+      isValid = false;
+    } else {
+      document.getElementById("password-error").innerHTML = "";
+    }
+    
+    if (isValid) {
+      console.log(`Username: ${username}`);
+      console.log(`Email: ${email}`);
+      console.log(`Password: ${password}`);
+    }
+  }
+</script>
+    </html>
